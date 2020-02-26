@@ -7,6 +7,11 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+}
+
 /* header */
 .container {
     width: 900px;
@@ -37,6 +42,7 @@ html {
 }
 
 .header__nav-link {
+    display: block;
     color: #626262;
     text-decoration: none;
     text-transform: uppercase;
@@ -48,6 +54,7 @@ html {
 
 .content {
     font-size: 0;
+    margin-bottom: 50px;
 }
 .article {
     display: inline-block;
@@ -57,20 +64,25 @@ html {
 }
 
 .caption {
+    margin: 0;
     font-family: Ubuntu-Light,AdobeInvisFont,MyriadPro-Regular;
     font-size: 14px;
     text-transform: uppercase;
     color: #b4ad9e;
     margin-top: 30px;
+    margin-bottom: 29px;
 }
 
 .headline {
+    margin: 0;
+    margin-bottom: 36px;
     font-size: 30px;
     font-family: Playfair Display;
     color: #626262;
 }
 
 .text {
+    margin: 0;
     font-size: 14px;
     color: #626262;
     font-family: Playfair Display;
@@ -87,7 +99,6 @@ html {
 .button input {
     font-family: Playfair Display;
     font-size: 20px;
-    margin-bottom: 50px;
     padding: 10px 20px 10px 20px;
     border: 1px solid #626262;
     border-radius: none;
