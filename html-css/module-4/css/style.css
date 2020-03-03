@@ -3,6 +3,17 @@
     clear: both;
     display: block;
 }
+
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+}
+
 * body {
     margin: 0;
     padding: 0;
@@ -10,8 +21,14 @@
 .wrapper {
     width: 100%;
     max-width: 1110px;
-    box-sizing: border-box;
     margin: 0 auto;
+}
+a {
+    display: block;
+}
+
+p {
+    margin: 0;
 }
 
 /* header */
@@ -19,6 +36,7 @@
 .header {
     padding-top: 35px;
     padding-bottom: 35px;
+    margin-bottom: 107px;
 }
 .header__logo {
     display: inline-block;
@@ -77,6 +95,8 @@
     color: #515151;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 auto 90px;
+
 }
 
 .title::after {
@@ -85,12 +105,12 @@
     width: 165px;
     height: 9px;
     background-color: #1ABC9C;
-    margin: 30px auto 90px;
+    margin: 30px auto 0;
 }
 
 .products {
     display: inline-block;
-    margin-bottom: 70px;
+    padding-bottom: 90px;
 }
 
 .products_ul {
@@ -131,7 +151,6 @@
     width: 201px;
     height: 40px;
     background-color: #323232;
-    box-sizing: border-box;
     float: left;
 }
 
@@ -145,7 +164,6 @@
     background-color: #8C8C8C;
     height: 40px;
     width: 54px;
-    box-sizing: border-box;
     float: left;
 }
 
@@ -184,7 +202,6 @@
 
 .news_li {
     float: left;
-    height: 494px;
     width: 350px;
     margin-right: 30px;
 }
@@ -201,7 +218,8 @@
     margin-bottom: 20px;
 }
 
-.but {
+.btn {
+    width: 160px;
     font-family: Open Sans;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -211,4 +229,8 @@
     background-color: #4EC6AB;
     font-weight: lighter;
     text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #15ebb9;
 }
