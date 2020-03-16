@@ -23,6 +23,7 @@ html {
     max-width: 1110px;
     margin: 0 auto;
 }
+
 a {
     display: block;
 }
@@ -185,10 +186,12 @@ p {
 }
 
 .caption {
+    margin: 0;
     font-size: 18px;
     font-family: Open Sans;
     color: #555252;
     line-height: 26px;
+    margin-bottom: 29px;
 }
 
 .caption::after {
@@ -197,7 +200,6 @@ p {
     width: 136px;
     height: 4px;
     background-color: #4EC6AB;
-    margin: 14px 0 29px 0;
 }
 
 .news_li {
