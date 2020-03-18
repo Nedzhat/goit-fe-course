@@ -45,6 +45,11 @@ html {
 }
 
 .wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.container {
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
@@ -93,12 +98,12 @@ p {
     margin: 0;
 }
 
-.nav_list li:not(:first-child) {
+.nav_list li:not(:last-child) {
     margin-right: 30px;
 }
 
 .nav_item {
-    float: right;
+    float: left;
 }
 
 .nav_link {
@@ -124,8 +129,8 @@ p {
     color: #515151;
     text-transform: uppercase;
     text-align: center;
-    margin: 100px auto 90px;
-
+    margin: 0;
+    margin-bottom: 90px;
 }
 
 .title::after {
@@ -218,8 +223,9 @@ p {
 }
 
 .products {
-    display: inline-block;
     padding-bottom: 90px;
+    padding-top: 90px;
+    background-color: #E9F0FD;
 }
 
 .products_list {
