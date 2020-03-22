@@ -1,0 +1,345 @@
+:root {
+    --blue-color: #95e1d3;
+    --pink-color: #f38181;
+    --grey-color: #333333;
+    --light-grey-color: #999;
+    --ff-montserrat: 'Montserrat', Helvetica, sans-serif;  
+    --ff-kaushan-script: 'Kaushan script', Helvetica, sans-serif;
+    --ff-roboto: 'Roboto', Helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+}
+
+* body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 110px;
+}
+
+.header__logo {
+    color: var(--blue-color);
+    font-size: 30px;
+    font-weight: 700px;
+    font-family: var(--ff-montserrat);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation {
+    width: 490px;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav_item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav_link {
+    color: var(--blue-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--ff-montserrat);
+    font-size: 14px;
+}
+
+.nav_link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pink-color);
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: var(--pink-color);
+    transition: 200ms;
+}
+
+.nav_link:hover::after {
+    background-color: var(--pink-color);
+    transition: 200ms;
+}
+
+/* main */
+
+.amazing_service {
+}
+
+.sub_title {
+    text-align: center;
+    font-family: var(--ff-kaushan-script);
+    font-size: 24px;
+    color: var(--grey-color);
+    margin-bottom: 22px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: var(--ff-montserrat);
+    color: var(--grey-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--pink-color);
+    margin: 40px auto 0;
+}
+
+.service_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service_item {
+    flex: 0 0 330px;
+    height: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title_h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 27px;
+    color: var(--grey-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--ff-montserrat);
+}
+
+.service_text {
+    font-size: 15px;
+    padding-left: 60px;
+    color: var(--light-grey-color);
+    font-family: var(--ff-roboto);
+}
+
+.team {
+}
+
+.team_text {
+    font-family: var(--ff-roboto);
+    text-align: center;
+    color: var(--light-grey-color);
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+
+.team_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_item:hover .team_avatar_wrap {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.team_item:hover .team_avatar {
+    opacity: 0.9;
+    transition: 200ms;
+}
+
+.team_item {
+    height: 542px;
+    margin-bottom: 80px;
+}
+
+.team_avatar_wrap {
+    position: relative;
+    box-shadow: 0 0 #95e1d3;
+    transition: 200ms;
+    margin-bottom: 30px;
+}
+
+.team_photo {
+    display: block;
+    width: 100%;
+}
+
+.team_avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(240,140,138,1) 0%,rgba(240,217,137,1) 100%);
+    opacity: 0;
+}
+
+.team_social_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.team_social_list li:not(:last-child) {
+    margin-right: 1px;
+}
+
+.team_social_item {
+    display: flex;
+    justify-content: center;
+    background-color: #fce38a;
+    width: 57px;
+    height: 57px;
+}
+
+.team_social_item:hover {
+    background-color: var(--blue-color);
+}
+
+.team_social_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: var(--ff-montserrat);
+    font-size: 14px;
+    color: var(--grey-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.team_occupation {
+    font-family: var(--ff-roboto);
+    text-align: center;
+    color: var(--light-grey-color);
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 80px;
+}
+
+/* footer */
+
+.footer_bord {
+    display: block;
+    width: 1200px;
+    height: 2px;
+    background-color: #e5e5e5;
+}
+
+.footer_active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: var(--ff-montserrat);
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.footer_text_mark {
+    color: var(--pink-color);
+}
+
+.footer_info {
+    display: flex;
+}
+
+.footer_input_info {
+    margin: 0;
+    padding: 0;
+    width: 231px;
+    height: 41px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 14px;
+}
+
+.footer_button_info {
+    margin: 0;
+    padding: 0;
+    width: 151px;
+    height: 41px;
+    background-color: #95e1d3;
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: var(--ff-montserrat);
+    font-weight: 700;
+}
