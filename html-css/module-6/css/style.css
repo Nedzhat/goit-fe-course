@@ -163,6 +163,47 @@ p {
     flex-wrap: wrap;
 }
 
+.service_item:nth-child(3n + 1) {
+    margin-left: 10px;
+}
+
+.service_item:nth-child(3n) {
+    margin-right: 10px;
+}
+
+.service_item::before {
+    content: '';
+    display: block;
+    height: 33px;
+    width: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_alarm::before {
+    background-image: url('../img/ALARM.png');
+}
+
+.icon_line::before {
+    background-image: url('../img/LINE.png');
+}
+
+.icon_computer::before {
+    background-image: url('../img/COMPUTER.png');
+}
+
+.icon_book::before {
+    background-image: url('../img/BOOK.png');
+}
+
+.icon_home::before {
+    background-image: url('../img/HOME.png');
+}
+
+.icon_image::before {
+    background-image: url('../img/IMAGE.png');
+}
+
 .title_h3 {
     margin: 0;
     margin-bottom: 15px;
@@ -182,7 +223,7 @@ p {
 }
 
 .team {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .team_text {
