@@ -9,7 +9,7 @@
     <title>Homework 7</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container header_inner">
       <header class="header">
         <a href="#">
           <span class="header__logo">Golden</span> 
@@ -40,8 +40,8 @@
         <section class="services">
           <h2 class="title"> 
             Services
-            <span class="sub_title">Proin iaculis purus consequat sem cure. </span> 
           </h2>
+            <p class="sub_title">Proin iaculis purus consequat sem cure. </p> 
           <ul class="services_list">
             <li class="services_item circle_1">
               <h3 class="title_h3">
@@ -80,14 +80,27 @@
           <div class="container">
             <h2 class="title_white"> 
             Contact us
-              <span class="sub_title">Proin iaculis purus consequat sem cure. </span> 
             </h2>
+            <p class="sub_title">Proin iaculis purus consequat sem cure. </p> 
             <form class="form_contact" method="POST" action="#">
+              <div class="contact_pos">
               <div class="contact_wrap">
-                <input class="input_contact" type="text" placeholder="Your name *" required>
-                <input class="input_contact" type="email" placeholder="Your e-mail *" required>
-                <input class="input_contact" type="text" placeholder="Subject">
-                <textarea class="text_contact" name="" id=""  placeholder="Your message *" required></textarea>
+                <input class="input_contact" 
+                type="text" 
+                name="user_name"
+                placeholder="Your name *" 
+                required>
+                <input class="input_contact" 
+                type="email"
+                name="user_email" 
+                placeholder="Your e-mail *" 
+                required>
+                <input class="input_contact" 
+                name="user_subject"
+                type="text" 
+                placeholder="Subject">
+              </div>
+              <textarea class="text_contact" name="user_message" id=""  placeholder="Your message *" required></textarea>
               </div>
               <button class="submit_btn" type="submit">Send message</button>
             </form>
