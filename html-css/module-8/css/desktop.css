@@ -1,0 +1,20 @@
+@media (min-width: 1440px) {
+    
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    
+    .partner_list {
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+    }
+
+    .partner_item {
+        margin-bottom: 0;
+        width: 235px;
+        font-weight: 300;
+    }
+}

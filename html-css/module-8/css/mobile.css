@@ -1,0 +1,242 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header_inner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_login_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_login_item {
+}
+
+.header_login_link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border: 3px solid #fff;
+    border-radius: 21px;
+    border-color: transparent;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.header_login_link:hover  {
+    border-color: #fff;
+}
+
+.header_logo {
+    padding-top: 120px;
+}
+
+.header_logo_link {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.preview {
+    min-height: 100vh;
+    padding: 229px 0 104px;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.preview_title {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 291px;
+    margin: 0 auto;
+}
+
+.preview_desc {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 300;
+    max-width: 217px;
+    margin: 0 auto; 
+}
+
+.btn {
+    display: block;
+    padding: 10px 47px;
+    border: 3px solid #ff4e50;
+    background-color: #ff4e50;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.partners {
+    padding-top: 68px;
+    padding-bottom: 57px;
+}
+
+.partner_title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.partner_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.partner_item {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+
+.partner_item:last-child {
+    margin-bottom: 0;
+}
+
+.partner_avatar {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.partner_avatar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.partner_one { 
+    background-image: url(../img/partners/1.jpg); 
+}
+
+.partner_two{
+    background-image: url(../img/partners/2.jpg);
+}
+
+.partner_three {
+    background-image: url(../img/partners/3.jpg);
+}
+
+.partner_four {
+    background-image: url(../img/partners/4.jpg);
+}
+
+.partner_one::after {
+    background-color: #ff4e50;
+    background-image: url(../img/icons/tv.png);
+    
+}
+
+.partner_two::after {
+    background-color: #ffa507;
+    background-image: url(../img/icons/bottle.png);
+    
+}
+
+.partner_three::after {
+    background-image: url(../img/icons/cup.png);
+    background-color: #1cd7ad;
+}
+
+.partner_four::after {
+    background-image: url(../img/icons/fly.png);
+    background-color: #4e73db;
+}
+
+.partner_name {
+    margin: 20px 0 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.partner_desc{
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #666;
+}
+
+.partners_btn {
+    display: block;
+    padding: 13px 47px;
+    border: 3px solid #ff4e50;
+    background-color: #fff;
+    color: #ff4e50;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.partners_btn:hover {
+    background-color: #ff4e50;
+    color: #fff;
+    transition: 0.35s;
+}
