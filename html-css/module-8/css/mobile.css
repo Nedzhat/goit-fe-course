@@ -174,19 +174,15 @@ a {
 }
 
 .partner_one { 
-    background-image: url(../img/partners/1.jpg); 
 }
 
 .partner_two{
-    background-image: url(../img/partners/2.jpg);
 }
 
 .partner_three {
-    background-image: url(../img/partners/3.jpg);
 }
 
 .partner_four {
-    background-image: url(../img/partners/4.jpg);
 }
 
 .partner_one::after {
