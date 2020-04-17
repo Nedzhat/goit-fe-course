@@ -35,11 +35,6 @@ a {
     background-size: cover;
 }
 
-.header_inner {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 .header_login_list {
     display: flex;
     justify-content: center;
