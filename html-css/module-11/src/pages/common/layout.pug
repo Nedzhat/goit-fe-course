@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="stylesheet", href="css/normalize.css")
+            link(rel="stylesheet", href="fonts/fonts.css")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap")
+            link(rel="stylesheet" href="css/style.min.css")
+            title Homework 11
+    body
+        block header
+            include header
+        block content
+        block footer
+            include footer
+        block scripts
+            script(src='js/main.min.js')

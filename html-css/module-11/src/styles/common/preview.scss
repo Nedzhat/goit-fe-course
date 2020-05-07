@@ -1,0 +1,37 @@
+.preview {
+	margin: 100px 0 104px;
+}
+.preview_desc {
+	font-family: 'Kaushan Script';
+	font-size: 72px;
+	color: $white-color;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: 400;
+	margin: 0 auto;
+}
+.preview_title {
+	font-family: $ff-montserrat;
+	font-size: 130px;
+	color: $white-color;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: 700;
+	max-width: 774px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.preview_btn {
+	display: block;
+	padding: 12px 32px;
+	border: 3px solid $white-color;
+	background-color: transparent;
+	color: $white-color;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: $ff-montserrat;
+	margin: 0 auto;
+	cursor: pointer;
+}
